@@ -2,7 +2,7 @@ spring:
   application:
     name: user
   datasource:
-    url: jdbc:postgresql://localhost:5432/user
+    url: jdbc:postgresql://localhost:5432/app_user
     username: postgres
     password: postgres
   jpa:
@@ -13,7 +13,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQL95Dialect
     show-sql: false
 
-server.port: 8080
+server.port: 8082
 
 spring.messages:
   basename: messages

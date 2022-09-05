@@ -16,7 +16,7 @@ spring:
     basename: messages
     encoding: UTF-8
     fallback-to-system-locale: true
-   use-code-as-default-message: false
+    use-code-as-default-message: false
    
 eureka:
   client:

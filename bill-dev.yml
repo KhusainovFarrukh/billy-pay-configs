@@ -14,6 +14,12 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQL95Dialect
         format_sql: true
     show-sql: true
+  messages:
+    basename: messages
+    encoding: UTF-8
+    fallback-to-system-locale: true
+    use-code-as-default-message: false
+    
 eureka:
   client:
     serviceUrl:
@@ -21,8 +27,6 @@ eureka:
 
 server.port: 8080
 
-spring.messages:
-  basename: messages
-  encoding: UTF-8
-  fallback-to-system-locale: true
-  use-code-as-default-message: false
+hibernate:
+  hbm2ddl:
+    auto: update

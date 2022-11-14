@@ -1,2 +1,5 @@
 spring.application.name: zipkin-server
-server.port: 9411
+server:
+  port: 9411
+  compression:
+    enabled: true

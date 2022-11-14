@@ -3,4 +3,5 @@ server:
   port: 9411
   compression:
     enabled: true
-management.endpoints.web.exposure.include: '*'
+armeria:
+  ports: 9411

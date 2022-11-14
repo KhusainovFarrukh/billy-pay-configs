@@ -4,4 +4,6 @@ server:
   compression:
     enabled: true
 armeria:
-  ports: 9411
+  ports:
+    - port: 9411
+      protocols: HTTP

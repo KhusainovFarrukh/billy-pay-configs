@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: bill-service
+          uri: lb://bill-service
+          predicates:
+            - Path=/api/v1/bills/**
+        - id: stats-service
+          uri: lb://stats-service
+          predicates:
+            - Path=/api/v1/stats/**
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/v1/users/**
+        - id: notification-service
+          uri: lb://notification-service
+          predicates:
+            - Path=/api/v1/notifications/**
+              
+server:
+  port: 8080

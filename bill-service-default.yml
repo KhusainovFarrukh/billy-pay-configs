@@ -12,6 +12,8 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQL95Dialect
     show-sql: false
+  rabbitmq:
+    addresses: localhost:5672
   messages:
     basename: messages
     encoding: UTF-8

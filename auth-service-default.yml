@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: auth-service
+  messages:
+    basename: messages
+    encoding: UTF-8
+    fallback-to-system-locale: true
+    use-code-as-default-message: false
+   
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761}/eureka/
+
+server.port: 8085

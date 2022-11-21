@@ -23,7 +23,7 @@ spring:
         - id: auth-service
           uri: lb://auth-service
           predicates:
-            - Path=/api/v1/register, /api/v1/login
+            - Path=/api/v1/register, /api/v1/login, /api/v1/refresh-token
               
 server:
   port: 8080
